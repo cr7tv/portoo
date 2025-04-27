@@ -7,46 +7,79 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+
   <!-- Font Awesome Icon - CSS-->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
   <!-- Custom Styles-->
   <link rel="stylesheet" href="assets/css/style.css" />
   <title> Singh Yogendra - Wordpress | SEO | Graphic Design</title>
 
+
   <style>
-  .scroll-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
-    border: none;
-    color: white;
-    padding: 8px;
-    cursor: pointer;
-    z-index: 1;
-    font-size: 24px;
-  }
-  .scroll-btn.left {
-    left: 0;
-  }
-  .scroll-btn.right {
-    right: 0;
-  }
-  .gallery-container::-webkit-scrollbar {
-    display: none; /* Hide scrollbar */
-  }
-  .caption {
-    position: absolute;
-    bottom: 8px;
-    left: 8px;
-    background: rgba(0,0,0,0.5);
-    color: white;
-    padding: 4px 8px;
-    font-size: 14px;
-    border-radius: 4px;
-  }
-</style>
+    .scroll-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0,0,0,0.5);
+      border: none;
+      color: white;
+      padding: 8px;
+      cursor: pointer;
+      z-index: 1;
+      font-size: 24px;
+    }
+    .scroll-btn.left {
+      left: 0;
+    }
+    .scroll-btn.right {
+      right: 0;
+    }
+    .gallery-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 10px 0;
+    }
+    .gallery-container::-webkit-scrollbar {
+      display: none; /* Hide scrollbar */
+    }
+    .gallery-item {
+      position: relative;
+      min-width: 250px;
+      margin-right: 10px;
+    }
+    .gallery-item img {
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .gallery-item img:hover {
+      transform: scale(1.02);
+    }
+    .caption-long {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 12px;
+      font-size: 14px;
+      box-sizing: border-box;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    .caption-long h6 {
+      margin: 0 0 6px 0;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .caption-long p {
+      margin: 0;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+  </style>
 
   
   <!-- Open Graph-->
@@ -396,60 +429,84 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
 </div>
 
         
-        
-<div class="card">
-  <div class="card-content">
-    <div class="row">
-      <div class="col s12">
-        <p>
-          <span class="card-title teal-text">Photo Gallery</span>
-        </p>
+<div class="container">
+  <div class="card">
+    <div class="card-content">
+      <div class="row">
+        <div class="col s12">
+          <p>
+            <span class="card-title teal-text">Photo Gallery</span>
+          </p>
+        </div>
       </div>
+
+      <div class="gallery-wrapper" style="position: relative; overflow: hidden;">
+        <button class="scroll-btn left" onclick="scrollGallery(-300)">&#10094;</button>
+
+        <div class="gallery-container" id="galleryContainer">
+
+          <div class="gallery-item">
+            <a href="assets/img/gallery1.webp" target="_blank">
+              <img class="responsive-img" src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-27_145951730.png" alt="Gallery Image 1">
+            </a>
+            <div class="caption-long">
+              <h6>Beautiful Landscape</h6>
+              <p>This landscape captures the breathtaking sunset view over mountains, offering a calm and serene atmosphere ideal for nature lovers and photographers.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <a href="assets/img/gallery2.webp" target="_blank">
+              <img class="responsive-img" src="assets/img/gallery2.webp" alt="Gallery Image 2">
+            </a>
+            <div class="caption-long">
+              <h6>City at Night</h6>
+              <p>Experience the vibrant city life after dark, filled with bright lights, busy streets, and endless possibilities in the urban jungle.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <a href="assets/img/gallery3.webp" target="_blank">
+              <img class="responsive-img" src="assets/img/gallery3.webp" alt="Gallery Image 3">
+            </a>
+            <div class="caption-long">
+              <h6>Mountain View</h6>
+              <p>A stunning view of majestic mountains under a clear blue sky, offering endless opportunities for hiking and adventure activities.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <a href="assets/img/gallery4.webp" target="_blank">
+              <img class="responsive-img" src="assets/img/gallery4.webp" alt="Gallery Image 4">
+            </a>
+            <div class="caption-long">
+              <h6>Sunset Beach</h6>
+              <p>Golden sands and a warm sunset create the perfect beach atmosphere, ideal for romantic walks and peaceful evening reflections.</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <a href="assets/img/gallery5.webp" target="_blank">
+              <img class="responsive-img" src="assets/img/gallery5.webp" alt="Gallery Image 5">
+            </a>
+            <div class="caption-long">
+              <h6>Nature Walk</h6>
+              <p>Take a leisurely walk through lush green forests, reconnecting with nature and enjoying the fresh, crisp air that rejuvenates the soul.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="scroll-btn right" onclick="scrollGallery(300)">&#10095;</button>
+      </div>
+
     </div>
 
-    <div class="gallery-wrapper" style="position: relative; overflow: hidden;">
-      <button class="scroll-btn left" onclick="scrollGallery(-300)">&#10094;</button>
-      <div class="gallery-container" id="galleryContainer" style="display: flex; overflow-x: auto; scroll-behavior: smooth;">
-        
-<div class="gallery-item" style="position: relative; min-width: 250px; margin-right: 10px;">
-  <img class="materialboxed responsive-img" src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-27_145951730.png" alt="Gallery Image 1">
-  <div class="caption-long">
-    <h6>Google Anlaytics - last 30 Days Report</h6>
-    <p>Demographic Report of audience engagement of last 30 days of website which i developed and set-up</p>
-  </div>
-</div>
-
-
-        <div class="gallery-item" style="position: relative; min-width: 250px; margin-right: 10px;">
-          <img class="materialboxed responsive-img" src="assets/img/gallery2.webp" alt="Gallery Image 2">
-          <div class="caption">City at Night</div>
-        </div>
-
-        <div class="gallery-item" style="position: relative; min-width: 250px; margin-right: 10px;">
-          <img class="materialboxed responsive-img" src="assets/img/gallery3.webp" alt="Gallery Image 3">
-          <div class="caption">Mountain View</div>
-        </div>
-
-        <div class="gallery-item" style="position: relative; min-width: 250px; margin-right: 10px;">
-          <img class="materialboxed responsive-img" src="assets/img/gallery4.webp" alt="Gallery Image 4">
-          <div class="caption">Sunset Beach</div>
-        </div>
-
-        <div class="gallery-item" style="position: relative; min-width: 250px; margin-right: 10px;">
-          <img class="materialboxed responsive-img" src="assets/img/gallery5.webp" alt="Gallery Image 5">
-          <div class="caption">Nature Walk</div>
-        </div>
-
-      </div>
-      <button class="scroll-btn right" onclick="scrollGallery(300)">&#10095;</button>
+    <div class="card-action">
+      <span>Gallery | Click any photo to view full size</span>
     </div>
-
-  </div>
-  <div class="card-action">
-    <span>Gallery | Click to Zoom</span>
   </div>
 </div>
-
 
 
 
@@ -998,18 +1055,13 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
     })
   </script>
 
-  <script>
+<script>
   function scrollGallery(amount) {
     document.getElementById('galleryContainer').scrollBy({
       left: amount,
       behavior: 'smooth'
     });
   }
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var elemsMaterialbox = document.querySelectorAll('.materialboxed');
-    var instancesMaterialbox = M.Materialbox.init(elemsMaterialbox);
-  });
 </script>
 
   
