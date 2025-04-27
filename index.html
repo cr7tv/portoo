@@ -2,186 +2,184 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+    <!-- Materialize - Compiled and minified CSS-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
 
-  <!-- Font Awesome Icon - CSS-->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-  <!-- Custom Styles-->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title> Singh Yogendra - Wordpress | SEO | Graphic Design</title>
+    <!-- Font Awesome Icon - CSS-->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title> Singh Yogendra - Wordpress | SEO | Graphic Design</title>
 
-  <style>
-    .scroll-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0,0,0,0.5);
-      border: none;
-      color: white;
-      padding: 8px;
-      cursor: pointer;
-      z-index: 1;
-      font-size: 24px;
-      border-radius: 50%;
-    }
-    .scroll-btn.left {
-      left: -20px;
-    }
-    .scroll-btn.right {
-      right: -20px;
-    }
-    .gallery-wrapper {
-      position: relative;
-      overflow: hidden;
-      margin: 20px 0;
-    }
-    .gallery-container {
-      display: flex;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      padding: 10px 0;
-    }
-    .gallery-container::-webkit-scrollbar {
-      display: none;
-    }
-    .gallery-item {
-      flex: 0 0 auto;
-      width: 250px;
-      margin-right: 15px;
-      text-align: center;
-    }
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      transition: transform 0.3s;
-    }
-    .gallery-item img:hover {
-      transform: scale(1.02);
-    }
-    .caption-long {
-      margin-top: 10px;
-    }
-    .caption-long h6 {
-      margin: 5px 0;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .caption-long p {
-      margin: 0;
-      font-size: 13px;
-      line-height: 1.4;
-      color: #555;
-    }
-  </style>
+    <style>
+        .scroll-btn {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background-color: rgba(0,0,0,0.5);
+          border: none;
+          color: white;
+          padding: 8px;
+          cursor: pointer;
+          z-index: 1;
+          font-size: 24px;
+          border-radius: 50%;
+        }
+        .scroll-btn.left {
+          left: -20px;
+        }
+        .scroll-btn.right {
+          right: -20px;
+        }
+        .gallery-wrapper {
+          position: relative;
+          overflow: hidden;
+          margin: 20px 0;
+        }
+        .gallery-container {
+          display: flex;
+          overflow-x: auto;
+          scroll-behavior: smooth;
+          padding: 10px 0;
+        }
+        .gallery-container::-webkit-scrollbar {
+          display: none;
+        }
+        .gallery-item {
+          flex: 0 0 auto;
+          width: 250px;
+          margin-right: 15px;
+          text-align: center;
+        }
+        .gallery-item img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          transition: transform 0.3s;
+        }
+        .gallery-item img:hover {
+          transform: scale(1.02);
+        }
+        .caption-long {
+          margin-top: 10px;
+        }
+        .caption-long h6 {
+          margin: 5px 0;
+          font-weight: bold;
+          font-size: 16px;
+        }
+        .caption-long p {
+          margin: 0;
+          font-size: 13px;
+          line-height: 1.4;
+          color: #555;
+        }
+    </style>
 
-  
-  <!-- Open Graph-->
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Varad Bhogayata | Software Developer" />
-  <meta property="og:description" content="Software Developer" />
-  <meta property="og:url" content="https://varadbhogayata.github.io/" />
-  <meta property="og:site_name" content="Varad Bhogayata | Software Developer" />
-  <meta property="article:publisher" content="https://varadbhogayata.github.io/" />
-  <meta property="og:image" content="https://varadbhogayata.github.io/examples/preview.JPG" />
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@varad_bhogayata" />
-  <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
-  <meta name="twitter:description" content="Software Developer" />
-  <meta name="twitter:url" content="https://twitter.com/varad_bhogayata" />
-  <meta name="author" content="Varad Bhogayata" />
-  <meta name="description" content="Software Developer with a passion for backend development and artificial intelligence." />
-  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png" />
-  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png" />
-  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png" />
-  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png" />
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
-  <link rel="manifest" href="assets/img/favicon/manifest.json" />
-  <meta name="msapplication-TileColor" content="#ffffff" />
-  <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png" />
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
-  <!-- Google Site Verification for indexing -->
-  <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
+
+    <!-- Open Graph-->
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Varad Bhogayata | Software Developer" />
+    <meta property="og:description" content="Software Developer" />
+    <meta property="og:url" content="https://varadbhogayata.github.io/" />
+    <meta property="og:site_name" content="Varad Bhogayata | Software Developer" />
+    <meta property="article:publisher" content="https://varadbhogayata.github.io/" />
+    <meta property="og:image" content="https://varadbhogayata.github.io/examples/preview.JPG" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@varad_bhogayata" />
+    <meta name="twitter:title" content="Coder | Technofreak | Explorer | Minimalist | Humane" />
+    <meta name="twitter:description" content="Software Developer" />
+    <meta name="twitter:url" content="https://twitter.com/varad_bhogayata" />
+    <meta name="author" content="Varad Bhogayata" />
+    <meta name="description" content="Software Developer with a passion for backend development and artificial intelligence." />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/img/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="assets/img/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="index, follow" />
+    <!-- Google Site Verification for indexing -->
+    <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
 
 <body>
 
-  
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
 
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="https://www.yogendrasingh.com.np/img.jpg" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
+    <!-- Nav class 1 -->
+    <nav class="hide-on-small-only">
+        <ul class="side-nav fixed section table-of-contents">
 
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            <li class="logo">
+                <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo grey-blue-text">
+                    <img src="https://www.yogendrasingh.com.np/img.jpg" class="circle img-responsive profile-pic" alt="avatar">
+                </a>
+            </li>
+
+            <li class="bold">
+                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark teal-text"><i
             class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
+            </li>
 
-      <li class="bold">
-        <!-- mdi-av-web small
+            <li class="bold">
+                <!-- mdi-av-web small
              mdi-av-my-library-books small-->
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+                <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
             class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
+            </li>
 
-      <li class="bold">
-        <!--
+            <li class="bold">
+                <!--
         ICONS:
         mdi-action-assessment
         mdi-social-poll
         mdi-av-equalizer
         -->
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+                <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
             class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-      
-      <li class="bold">
-        <!--
+            </li>
+
+            <li class="bold">
+                <!--
         ICONS:
         -->
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+                <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
             class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
+            </li>
 
-      <li class="bold">
-        <!-- 
+            <li class="bold">
+                <!-- 
         1. mdi-communication-contacts
         2. mdi-content-mail
         3. mdi-communication-email
         -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+                <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
             class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
+            </li>
 
-      <li class="bold">
-        <!--
+            <li class="bold">
+                <!--
         ICONS:
         1. mdi-action-description
         2. mdi-file-folder
@@ -189,123 +187,117 @@
         4. mdi-file-attachment
         5. mdi-file-folder-shared
         -->
-        <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
+                <!-- <a aria-label="Open Varad's resume in a new tab" href="#resume" target="_blank"
           onclick="window.open('https://drive.google.com/file/d/1vYi-bMyIsZPve0x_clxY8xsDtiHiOMd3/view?usp=sharing')"
           class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a> -->
-        <a aria-label="Open Varad's resume in a new tab" href="assets/resume/Varad_Bhogayata_Resume.pdf" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  
-      </li>
-    </ul>
-  </nav>
+                <a aria-label="Open Varad's resume in a new tab" href="assets/resume/Varad_Bhogayata_Resume.pdf" target="_blank" class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+            </li>
+        </ul>
+    </nav>
 
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text"> Singh Yogendra
+    <!-- Nav class 2 -->
+    <nav class="hide-on-large only trigger z-depth-1">
+        <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <div class="name-title">
+            <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text"> Singh Yogendra
         </a><span class="black-text"> SEO | Graphic Design </span>
-    </div>
-  </nav>
-
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
-            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-assessment small"></i><span>Skills</span></a>
-      </li>
-
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Open Varad's Resume in a new tab"
-          href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Main Content-->
-  <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal"> Singh Yogendra.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <h5>Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with over 6 years of practical experience.</h5>
-            </div>
-            
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </nav>
 
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <!-- <blockquote>
+    <!-- Nav class 3 -->
+    <nav class="hide-on-large only">
+        <ul id="slide-out" class="side-nav">
+            <li class="bold">
+                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-person small"></i><span>About</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Experience section" href="#experience" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-trending-up small"></i><span>Experience</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Projects section" href="#projects" class="waves-effect waves-dark teal-text"><i
+            class="mdi-av-my-library-books small"></i><span>Projects</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark teal-text"><i
+            class="mdi-action-assessment small"></i><span>Skills</span></a>
+            </li>
+
+            <li class="bold">
+                <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
+            class="mdi-social-school small"></i><span>Education</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
+            class="mdi-content-mail small"></i><span>Contact</span></a>
+            </li>
+            <li class="bold">
+                <a aria-label="Open Varad's Resume in a new tab" href="https://drive.google.com/file/d/1B6MZ1z0-7NsefC3Lm_q-uhib28MTqpE9/view?usp=sharing" target="_blank" class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content-->
+    <main>
+        <!-- First Section: Heading lines and image -->
+        <section id="intro" class="section scrollspy full-height">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="col-md-9">
+                    <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
+                        <div class="caption">
+                            <h2>Hi, I'm <span class="teal"> Singh Yogendra.</span></h2>
+                            <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+                            <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
+                            <h5>Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with over 6 years of practical experience.</h5>
+                        </div>
+
+                        <div class='buttons'>
+                            <a href="#about" class="readme">Read More</a>
+                            <a href="#contact" class="contactme">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Second Section: About -->
+        <section id="about" class="section scrollspy">
+            <h3 class="page-title white-text teal">About</h3>
+            <div class="container flow-text">
+                <!-- <blockquote>
           <h2>
             A Software Developer with a passion for Backend Development and Artificial Intelligence.
 
           </h2>
-        </blockquote> -->        
-        <p>
-Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with over 6 years of practical experience. 
-          Skilled in website optimization, graphic design, AI-powered research, and client communication. 
-          Worked with individuals and organizations including Nest Nepal, generating impactful visual content and increasing digital performance. 
-          Passionate about tech and learning, with a strong foundation built through self-driven learning and AI tools like ChatGPT, Grok, and DeepSeek.
-        </p>
-        <p>
-<ul>
-  <li><b>• WordPress Website Design & Management</b></li>
-  <li><b>• On-page / Off-page / Technical SEO</b></li>
-  <li><b>• Google Analytics, Search Console</b></li>
-  <li><b>• AI Prompting (ChatGPT, Grok, DeepSeek)</b></li>
-  <li><b>• Promotion, Marketing & Social Media Design</b></li>
-  <li><b>• Keyword Research & Strategy, Targets </b></li>
-  <li><b>• Google Analytics, Search Console</b></li>
-  <li><b>• Hosting, Domain & Web Performance</b></li>
-</ul>
+        </blockquote> -->
+                <p>
+                    Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with over 6 years of practical experience. Skilled in website optimization, graphic design, AI-powered research, and client communication. Worked with individuals and organizations
+                    including Nest Nepal, generating impactful visual content and increasing digital performance. Passionate about tech and learning, with a strong foundation built through self-driven learning and AI tools like ChatGPT, Grok, and DeepSeek.
+                </p>
+                <p>
+                    <ul>
+                        <li><b>• WordPress Website Design & Management</b></li>
+                        <li><b>• On-page / Off-page / Technical SEO</b></li>
+                        <li><b>• Google Analytics, Search Console</b></li>
+                        <li><b>• AI Prompting (ChatGPT, Grok, DeepSeek)</b></li>
+                        <li><b>• Promotion, Marketing & Social Media Design</b></li>
+                        <li><b>• Keyword Research & Strategy, Targets </b></li>
+                        <li><b>• Google Analytics, Search Console</b></li>
+                        <li><b>• Hosting, Domain & Web Performance</b></li>
+                    </ul>
 
- </p>
-          
-        <p>
-          Seeking a dynamic role where I can leverage my expertise in WordPress website management, SEO, and graphic design to drive digital success, while embracing opportunities for professional growth, creative challenges, and continuous learning in a tech-driven environment.
-        </p>
-        <!-- <p>
+                </p>
+
+                <p>
+                    Seeking a dynamic role where I can leverage my expertise in WordPress website management, SEO, and graphic design to drive digital success, while embracing opportunities for professional growth, creative challenges, and continuous learning in a tech-driven
+                    environment.
+                </p>
+                <!-- <p>
           Another Paragraph
         </p>  -->
-        <!-- <p>
+                <!-- <p>
         <strong>Current Focus</strong>:&nbsp;<a aria-label="Navigate to the Inclusive Design Patterns homepage"
           href="https://www.smashingmagazine.com/inclusive-design-patterns/">Accessibility</a>&nbsp;//&nbsp;<a
           aria-label="Navigate to the Full Stack React homepage"
@@ -313,290 +305,282 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
           aria-label='Navigate to the article "Scalable CSS"'
           href="https://mrmrs.github.io/writing/2016/03/24/scalable-css/">Design Systems</a>
         </p> -->
-      </div>
-    </section>
-
-
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-
-  <div class="card">
-  <div class="card-content">
-    <div class="row">
-      <div class="col s12 m2">
-        <a><img alt="WordPress & SEO" src="https://cdn4.iconfinder.com/data/icons/miu-square-flat-social/60/wordpress-square-social-media-512.png" class="responsive-img center-block" /></a>
-      </div>
-      <div class="col s12 m10">
-        <p>
-          <span class="card-title"><a href="#" target="_blank" class="teal-text hoverline">Freelance Wedsite Development</a></span>
-        </p>
-      </div>
-    </div>
-
-      <ul>
-      <li>Built and managed SEO-optimized websites</li>
-      <li>Ranked websites in multiple countries using data-driven keyword strategies</li>
-      <li>Implemented Google Analytics, optimized content performance</li>
-      <li>Created engaging layouts, banners, and website visuals</li>
-      <li><b>Tools:</b> WordPress, Blogger, Custom Homepages </li>
-    </ul>
-  </div>
-  <div class="card-action">
-    <span>2021 – Present | Remote</span>
-  </div>
-</div>
-
-        
-<div class="card">
-  <div class="card-content">
-    <div class="row">
-      <div class="col s12 m2">
-        <a><img alt="Nest Nepal logo" src="https://www.citypng.com/public/uploads/preview/adobe-photoshop-ps-square-logo-icon-png-7017516947730275g1pkunbfs.png" class="responsive-img center-block" /></a>
-      </div>
-      <div class="col s12 m10">
-        <p>
-          <span class="card-title"><a href="#" target="_blank" class="teal-text hoverline">Graphic & Social Media Design </a></span>
-        </p>
-      </div>
-    </div>
-    <ul>
-      <li>Designed marketing and website graphics</li>
-      <li>Social Media, Banners & Info Graphics </li>
-      <li>Used convincing communication to engage clients</li>
-      <li><b>Tools:</b> Photoshop, Illustrator, Canva, </li>
-    </ul>
-  </div>
-  <div class="card-action">
-    <span>2021 – Present | Remote</span>
-  </div>
-</div>
-
-
-
-        
-<div class="card">
-  <div class="card-content">
-    <div class="row">
-      <div class="col s12 m2">
-        <a><img alt="SEO Tools" src="https://cdn-icons-png.flaticon.com/512/48/48594.png" class="responsive-img center-block" /></a>
-      </div>
-      <div class="col s12 m10">
-        <p>
-          <span class="card-title"><a href="#" target="_blank" class="teal-text hoverline">Website SEO - Keyword Research, Rankings </a></span>
-        </p>
-      </div>
-    </div>
-    <ul>
-      <li>Conducted detailed keyword research using Ahrefs, Ubersuggest SEMrush, Google Search Console, and other tools</li>
-      <li>Ranked websites in multiple countries with targeted keyword strategies</li>
-      <li>Monitored and optimized website rankings across different search engines</li>
-      <li>Analyzed competitors and identified ranking opportunities</li>
-      <li><b>Tools:</b> Ahrefs, SEMrush, Google Search Console, Ubersuggest, Keyword Planner</li>
-    </ul>
-  </div>
-  <div class="card-action">
-    <span>2021 – Present | Remote</span>
-  </div>
-</div>
-
-        
-<div class="container">
-  <div class="card">
-    <div class="card-content">
-      <div class="row">
-        <div class="col s12">
-          <p><span class="card-title teal-text"> Website Stats: I developed </span></p>
-        </div>
-      </div>
-
-      <div class="gallery-wrapper">
-        <button class="scroll-btn left" onclick="scrollGallery(-300)">&#10094;</button>
-
-        <div class="gallery-container" id="galleryContainer">
-
-          <div class="gallery-item">
-            <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-27_145951730.png" target="_blank">
-              <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-27_145951730.png" alt="Gallery Image 1">
-            </a>
-            <div class="caption-long">
-              <h6>Beautiful Landscape</h6>
-              <p>This landscape captures the breathtaking sunset view over mountains, offering a calm and serene atmosphere ideal for nature lovers and photographers.</p>
             </div>
-          </div>
+        </section>
 
 
-          
-          <div class="gallery-item">
-            <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" target="_blank">
-              <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" alt="Gallery Image 2">
-            </a>
-            <div class="caption-long">
-              <h6>Full Stats SuperCounter</h6>
-              <p>______</p>
-            </div>
-          </div>
+        <!-- Third Section: Experience -->
+        <section id="experience" class="section scrollspy">
+            <h3 class="page-title white-text teal">Experience</h3>
+            <div class="container">
 
-          <div class="gallery-item">
-            <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" target="_blank">
-              <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" alt="Gallery Image 2">
-            </a>
-            <div class="caption-long">
-              <h6>Google Search Console Data of Last 12 Months </h6>
-              <p>______</p>
-            </div>
-          </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <a><img alt="WordPress & SEO" src="https://cdn4.iconfinder.com/data/icons/miu-square-flat-social/60/wordpress-square-social-media-512.png" class="responsive-img center-block" /></a>
+                            </div>
+                            <div class="col s12 m10">
+                                <p>
+                                    <span class="card-title"><a href="#" target="_blank" class="teal-text hoverline">Freelance Wedsite Development</a></span>
+                                </p>
+                            </div>
+                        </div>
 
-          <div class="gallery-item">
-            <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144455723.png" target="_blank">
-              <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144455723.png" alt="Gallery Image 2">
-            </a>
-            <div class="caption-long">
-              <h6>Quiz Website Last 12 Months Data</h6>
-              <p>______</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144402370.png" target="_blank">
-              <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144402370.png" alt="Gallery Image 2">
-            </a>
-            <div class="caption-long">
-              <h6>SHA256 Last 12 Month Data </h6>
-              <p>______</p>
-            </div>
-          </div>
-
-          <div class="gallery-item">
-            <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144341986.png" target="_blank">
-              <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144341986.png" alt="Gallery Image 2">
-            </a>
-            <div class="caption-long">
-              <h6>Emoji Website Last 12 Months Data</h6>
-              <p>______</p>
-            </div>
-          </div>
-
-
-          
-          <div class="gallery-item">
-            <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" target="_blank">
-              <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" alt="Gallery Image 2">
-            </a>
-            <div class="caption-long">
-              <h6>Video Player Last 12 Months Data</h6>
-              <p>______</p>
-            </div>
-          </div>
-        
-        
-        
-        </div>
-        <button class="scroll-btn right" onclick="scrollGallery(300)">&#10095;</button>
-      </div>
-
-    </div>
-
-    <div class="card-action">
-      <span>Click any photo to view in full size</span>
-    </div>
-  </div>
-</div>
-
-
-        
-<!-- Ending Tags-->
-    </div>
-    </section>
-
-
-    
-    <!-- Fourth Section: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="music streaming app" src="assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Music Player Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A music streaming web app based on Django
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Search and filter songs based on language and singer.</li>
-                  <li>Create multiple playlists and add/remove songs to/from playlist.</li>
-                  <li>Scroll through recently played/viewed songs.</li>
-
-
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/music-player"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+                        <ul>
+                            <li>Built and managed SEO-optimized websites</li>
+                            <li>Ranked websites in multiple countries using data-driven keyword strategies</li>
+                            <li>Implemented Google Analytics, optimized content performance</li>
+                            <li>Created engaging layouts, banners, and website visuals</li>
+                            <li><b>Tools:</b> WordPress, Blogger, Custom Homepages </li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <span>2021 – Present | Remote</span>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="quiz app" src="assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Quiz Web-App<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A quiz playing web app based on Django
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, Heroku</li>
-                  <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
-                  <li>Play Quiz and see the leaderboard</li>
 
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/QuizUp"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <a><img alt="Nest Nepal logo" src="https://www.citypng.com/public/uploads/preview/adobe-photoshop-ps-square-logo-icon-png-7017516947730275g1pkunbfs.png" class="responsive-img center-block" /></a>
+                            </div>
+                            <div class="col s12 m10">
+                                <p>
+                                    <span class="card-title"><a href="#" target="_blank" class="teal-text hoverline">Graphic & Social Media Design </a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Designed marketing and website graphics</li>
+                            <li>Social Media, Banners & Info Graphics </li>
+                            <li>Used convincing communication to engage clients</li>
+                            <li><b>Tools:</b> Photoshop, Illustrator, Canva, </li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <span>2021 – Present | Remote</span>
+                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
-          <!-- 1. Django Project -->
-          <!-- <div class="col s12 m6 l6">
+
+
+
+                <div class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col s12 m2">
+                                <a><img alt="SEO Tools" src="https://cdn-icons-png.flaticon.com/512/48/48594.png" class="responsive-img center-block" /></a>
+                            </div>
+                            <div class="col s12 m10">
+                                <p>
+                                    <span class="card-title"><a href="#" target="_blank" class="teal-text hoverline">Website SEO - Keyword Research, Rankings </a></span>
+                                </p>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Conducted detailed keyword research using Ahrefs, Ubersuggest SEMrush, Google Search Console, and other tools</li>
+                            <li>Ranked websites in multiple countries with targeted keyword strategies</li>
+                            <li>Monitored and optimized website rankings across different search engines</li>
+                            <li>Analyzed competitors and identified ranking opportunities</li>
+                            <li><b>Tools:</b> Ahrefs, SEMrush, Google Search Console, Ubersuggest, Keyword Planner</li>
+                        </ul>
+                    </div>
+                    <div class="card-action">
+                        <span>2021 – Present | Remote</span>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="row">
+                                <div class="col s12">
+                                    <p><span class="card-title teal-text"> Website Stats: I developed </span></p>
+                                </div>
+                            </div>
+
+                            <div class="gallery-wrapper">
+                                <button class="scroll-btn left" onclick="scrollGallery(-300)">&#10094;</button>
+
+                                <div class="gallery-container" id="galleryContainer">
+
+                                    <div class="gallery-item">
+                                        <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-27_145951730.png" target="_blank">
+                                            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-27_145951730.png" alt="Gallery Image 1">
+                                        </a>
+                                        <div class="caption-long">
+                                            <h6>Beautiful Landscape</h6>
+                                            <p>This landscape captures the breathtaking sunset view over mountains, offering a calm and serene atmosphere ideal for nature lovers and photographers.</p>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="gallery-item">
+                                        <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" target="_blank">
+                                            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" alt="Gallery Image 2">
+                                        </a>
+                                        <div class="caption-long">
+                                            <h6>Full Stats SuperCounter</h6>
+                                            <p>______</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="gallery-item">
+                                        <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" target="_blank">
+                                            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" alt="Gallery Image 2">
+                                        </a>
+                                        <div class="caption-long">
+                                            <h6>Google Search Console Data of Last 12 Months </h6>
+                                            <p>______</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="gallery-item">
+                                        <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144455723.png" target="_blank">
+                                            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144455723.png" alt="Gallery Image 2">
+                                        </a>
+                                        <div class="caption-long">
+                                            <h6>Quiz Website Last 12 Months Data</h6>
+                                            <p>______</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="gallery-item">
+                                        <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144402370.png" target="_blank">
+                                            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144402370.png" alt="Gallery Image 2">
+                                        </a>
+                                        <div class="caption-long">
+                                            <h6>SHA256 Last 12 Month Data </h6>
+                                            <p>______</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="gallery-item">
+                                        <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144341986.png" target="_blank">
+                                            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144341986.png" alt="Gallery Image 2">
+                                        </a>
+                                        <div class="caption-long">
+                                            <h6>Emoji Website Last 12 Months Data</h6>
+                                            <p>______</p>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="gallery-item">
+                                        <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" target="_blank">
+                                            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" alt="Gallery Image 2">
+                                        </a>
+                                        <div class="caption-long">
+                                            <h6>Video Player Last 12 Months Data</h6>
+                                            <p>______</p>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <button class="scroll-btn right" onclick="scrollGallery(300)">&#10095;</button>
+                            </div>
+
+                        </div>
+
+                        <div class="card-action">
+                            <span>Click any photo to view in full size</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Ending Tags-->
+            </div>
+        </section>
+
+
+
+        <!-- Fourth Section: Projects -->
+        <section id="projects" class="section scrollspy">
+            <h3 class="page-title white-text teal">Projects</h3>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="music streaming app" src="assets/img/project-music-player.png" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Music Player Web-App<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                                <p>
+                                    A music streaming web app based on Django
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                                <ul>
+                                    <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, AWS S3, Heroku</li>
+                                    <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
+                                    <li>Search and filter songs based on language and singer.</li>
+                                    <li>Create multiple playlists and add/remove songs to/from playlist.</li>
+                                    <li>Scroll through recently played/viewed songs.</li>
+
+
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit " href="https://galvanic-music.herokuapp.com/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                                    <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/music-player" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="quiz app" src="assets/img/project-quizup-logo-1.png" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Quiz Web-App<i
+                    class="mdi-navigation-more-vert right"></i></span>
+                                <p>
+                                    A quiz playing web app based on Django
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title grey-text"><small>Accomplishments</small><i
+                    class="mdi-navigation-close right"></i></span>
+                                <ul>
+                                    <li><b>Tools:</b> Django, HTML, CSS, Bootstrap, SQLite, Heroku</li>
+                                    <li>Register/login to the web app(with OAuth-based Google Sign-In).</li>
+                                    <li>Play Quiz and see the leaderboard</li>
+
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit " href="https://quiz-up-app.herokuapp.com/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-external-link"></i></a>
+                                    <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/QuizUp" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                      class="fa fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1. Django Project -->
+                    <!-- <div class="col s12 m6 l6">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="django web app" src="assets/img/project-library-logo.png" style="height: 100%; width: 100%" class="activator" />
@@ -632,280 +616,254 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
             </div>
           </div> -->
 
-          <!-- Flask Project -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of web app" src="assets/img/project-blog-logo.jpg"
-                style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Blog Web-App<i
+                    <!-- Flask Project -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Screenshot of web app" src="assets/img/project-blog-logo.jpg" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Blog Web-App<i
                     class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A simple and extensible blog web-app based on Flask.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
+                                <p>
+                                    A simple and extensible blog web-app based on Flask.
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Postgresql, Python</li>
-                  <li>Users can view posts and contact the admin via Contact Page.</li>
-                  <li>Admin can Add, Delete, Update posts.</li>
+                                <ul>
+                                    <li><b>Tools:</b> HTML, CSS, Bootstrap, Flask, SQLAlchemy, Postgresql, Python</li>
+                                    <li>Users can view posts and contact the admin via Contact Page.</li>
+                                    <li>Admin can Add, Delete, Update posts.</li>
 
 
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit Blog website" href="https://flask-heroku-blog.herokuapp.com/" target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-external-link"></i></a>
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/flask-blog"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                                    <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/flask-blog" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-          <!-- VQA -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/img/project-aim_bert-bias.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Visual Question Answering<i
+                    <!-- VQA -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Screenshot of  web app" src="assets/img/project-aim_bert-bias.png" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Visual Question Answering<i
                     class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  An attention-based classification model that aims at generating an answer for a given input image.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title teal-text"><small>Accomplishments</small><i
+                                <p>
+                                    An attention-based classification model that aims at generating an answer for a given input image.
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title teal-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Incorporated Convolution Neural Networks (CNN) for extracting image features and Long Short Term
-                    Memory for extracting question
-                    embeddings.</li>
-                  <li>Tested the model on the COCO dataset, abstract scenes images, and got 69% overall accuracy on the
-                    VQA evaluation metric.</li>
+                                <ul>
+                                    <li>Incorporated Convolution Neural Networks (CNN) for extracting image features and Long Short Term Memory for extracting question embeddings.
+                                    </li>
+                                    <li>Tested the model on the COCO dataset, abstract scenes images, and got 69% overall accuracy on the VQA evaluation metric.</li>
 
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/visual-question-answering" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-          <!-- Video Summarizer -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/img/computer-vision-v2-04.png" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Video Summarizer<i
+                    <!-- Video Summarizer -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Screenshot of  web app" src="assets/img/computer-vision-v2-04.png" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Video Summarizer<i
                     class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A Seq2Seq model that generates a short summary of the given input video.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
+                                <p>
+                                    A Seq2Seq model that generates a short summary of the given input video.
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title brown-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Incorporated CNN to detect and classify objects in the video frames and Long Short Term Memory for
-                    generating a summary.</li>
-                  <li>Evaluated the model on MSVD (Microsoft Video Description Corpus) dataset; achieved 0.77, 0.71,
-                    0.52 scores respectively on ROGUE,
-                    BLEU, METEOR evaluation metrics.</li>
+                                <ul>
+                                    <li>Incorporated CNN to detect and classify objects in the video frames and Long Short Term Memory for generating a summary.</li>
+                                    <li>Evaluated the model on MSVD (Microsoft Video Description Corpus) dataset; achieved 0.77, 0.71, 0.52 scores respectively on ROGUE, BLEU, METEOR evaluation metrics.</li>
 
-                </ul>
-                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                                </ul>
+                                <!-- TODO: UPLOAD THIS PROJECT ON GITHUB -->
+                                <div class="card-action">
+                                    <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-          <!-- Image Generator -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/img/gan.jpg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Image Generator<i
+                    <!-- Image Generator -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Screenshot of  web app" src="assets/img/gan.jpg" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Image Generator<i
                     class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  An image generator based on the concept of adversarial networks (GANs)
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
+                                <p>
+                                    An image generator based on the concept of adversarial networks (GANs)
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title brown-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Developed system was tested on a human-face database and loss was calculated by comparing the PCAs
-                    of generated and original image.</li>
-                  <li>Calculated difference in PCA was less than 10%, depicting the successful generation of an image by
-                    the generator.</li>
+                                <ul>
+                                    <li>Developed system was tested on a human-face database and loss was calculated by comparing the PCAs of generated and original image.</li>
+                                    <li>Calculated difference in PCA was less than 10%, depicting the successful generation of an image by the generator.</li>
 
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/"
-                    target="_blank" data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
                       class="fa fa-github"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-          <!-- Head Counting System -->
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img alt="Screenshot of  web app" src="assets/img/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg" style="height: 100%; width: 100%" class="activator" />
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Head Counting System<i
+                    <!-- Head Counting System -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Screenshot of  web app" src="assets/img/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg" style="height: 100%; width: 100%" class="activator" />
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator teal-text hoverline">Head Counting System<i
                     class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  A system that calculates the attendance of the class from a panoramic image of a live classroom.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title brown-text"><small>Accomplishments</small><i
+                                <p>
+                                    A system that calculates the attendance of the class from a panoramic image of a live classroom.
+                                </p>
+                            </div>
+                            <div class="card-reveal">
+                                <!-- TODO: change this -- only close button -->
+                                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
+                                <span class="card-title brown-text"><small>Accomplishments</small><i
                     class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>Used Singular Value Decomposition for image compression; applied various image processing
-                    techniques and morphological operations to
-                    detect the number of heads.</li>
+                                <ul>
+                                    <li>Used Singular Value Decomposition for image compression; applied various image processing techniques and morphological operations to detect the number of heads.</li>
 
-                </ul>
-                <div class="card-action">
-                  <a aria-label="Visit the GitHub repo for  project"
-                    href="https://github.com/varadbhogayata/visual-question-answering" target="_blank"
-                    data-position="top" data-tooltip="View Source"
-                    class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
-                      class="fa fa-github"></i></a>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit the GitHub repo for  project" href="https://github.com/varadbhogayata/visual-question-answering" target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ************* -->
                 </div>
-              </div>
             </div>
-          </div>
+        </section>
 
-          <!-- ************* -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Fifth Section: Skills -->
-    <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <!-- Languages and Databases -->
-        <div class="card">
-          <div class="card-content">
-            <h4 class="brown-text light">Tools I Use Most Frequently </h4>
-            <div class="row text-center">
-              
-              
-              <div class="col s4 m2">
-                <img alt="" src="assets/img/html5-300x300.jpg" class="responsive-img" />HTML
-              </div>
-              
-              <div class="col s4 m2">
-                <img alt="" src="assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
-              </div>
-
-              
-              <div class="col s4 m2">
-                <img alt="" src="https://static.vecteezy.com/system/resources/thumbnails/027/127/463/small_2x/javascript-logo-javascript-icon-transparent-free-png.png" class="responsive-img" />JavaScript
-              </div>
-
-              
-              <div class="col s4 m2">
-                <img alt="" src="https://cdn4.iconfinder.com/data/icons/miu-square-flat-social/60/wordpress-square-social-media-512.png" class="responsive-img" />Wordpress
-              </div>
-         
-              <div class="col s4 m2">
-                <img alt="" src="https://andisites.com/wp-content/uploads/2023/01/Google-Search-Console-WordPress.png" class="responsive-img" /> Search Console
-              </div>
-
-              <div class="col s4 m2">
-                <img alt="" src="https://brandlogo.org/wp-content/uploads/2024/09/Google-Analytics-Logo-with-Wordmark-300x300.png.webp" class="responsive-img" /> Google Analytics
-              </div>
-
-              <div class="col s4 m2">
-                <img alt="" src="https://cdn-1.webcatalog.io/catalog/ubersuggest/ubersuggest-icon-filled-256.png" class="responsive-img" />  Uber Suggest
-              </div>
-
-              <div class="col s4 m2">
-                <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvLuxOH0jpQgX9haIOdf9cfspO5YKL5C0nsg&s" class="responsive-img" /> Ahrefs
-              </div>
-
-              <div class="col s4 m2">
-                <img alt="" src="https://www.freelogovectors.net/wp-content/uploads/2023/10/semrush-logo-freelogovectors.net_-180x113.png" class="responsive-img" /> Semrush
-              </div>
-
-              <div class="col s4 m2">
-                <img alt="" src="https://www.edigitalagency.com.au/wp-content/uploads/Canva-logo-PNG-large-size.png" class="responsive-img" /> Canva
-              </div>
-
-              <div class="col s4 m2">
-                <img alt="" src="https://www.citypng.com/public/uploads/preview/adobe-photoshop-ps-square-logo-icon-png-7017516947730275g1pkunbfs.png" class="responsive-img"/> Photoshop
-              </div>
-            
-              <div class="col s4 m2">
-                <img alt="" src="https://images.vexels.com/content/162832/preview/adobe-illustrator-ai-colored-icon-fb6291.png" class="responsive-img"/> Illustrator
-              </div>
-            
-              <div class="col s4 m2">
-                <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRqtIL0vpEsEnhCNcvW8AtYY2Hf1gdRhz3mg&s" class="responsive-img"/> ChatGPT
-              </div>
+        <!-- Fifth Section: Skills -->
+        <section id="skills" class="section scrollspy">
+            <h3 class="page-title white-text teal">Skills</h3>
+            <div class="container">
+                <!-- Languages and Databases -->
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Tools I Use Most Frequently </h4>
+                        <div class="row text-center">
 
 
-              <div class="col s4 m2">
-                <img alt="" src="https://pbs.twimg.com/profile_images/1769430779845611520/lIgjSJGU_400x400.jpg" class="responsive-img"/> GroxAI/ElonMusk AI
-              </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="assets/img/html5-300x300.jpg" class="responsive-img" />HTML
+                            </div>
+
+                            <div class="col s4 m2">
+                                <img alt="" src="assets/img/css3-300x300.jpg" class="responsive-img" />CSS3
+                            </div>
 
 
-              <div class="col s4 m2">
-                <img alt="" src="https://crystalpng.com/wp-content/uploads/2025/01/deepseek-logo-03.png" class="responsive-img"/> DeepSeek AI
-              </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="https://static.vecteezy.com/system/resources/thumbnails/027/127/463/small_2x/javascript-logo-javascript-icon-transparent-free-png.png" class="responsive-img" />JavaScript
+                            </div>
 
 
-              
-            </div>
-          </div>
-        </div>
+                            <div class="col s4 m2">
+                                <img alt="" src="https://cdn4.iconfinder.com/data/icons/miu-square-flat-social/60/wordpress-square-social-media-512.png" class="responsive-img" />Wordpress
+                            </div>
 
-        
+                            <div class="col s4 m2">
+                                <img alt="" src="https://andisites.com/wp-content/uploads/2023/01/Google-Search-Console-WordPress.png" class="responsive-img" /> Search Console
+                            </div>
 
-        <!-- certifications -->
-        <!-- <div class="card">
+                            <div class="col s4 m2">
+                                <img alt="" src="https://brandlogo.org/wp-content/uploads/2024/09/Google-Analytics-Logo-with-Wordmark-300x300.png.webp" class="responsive-img" /> Google Analytics
+                            </div>
+
+                            <div class="col s4 m2">
+                                <img alt="" src="https://cdn-1.webcatalog.io/catalog/ubersuggest/ubersuggest-icon-filled-256.png" class="responsive-img" /> Uber Suggest
+                            </div>
+
+                            <div class="col s4 m2">
+                                <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvLuxOH0jpQgX9haIOdf9cfspO5YKL5C0nsg&s" class="responsive-img" /> Ahrefs
+                            </div>
+
+                            <div class="col s4 m2">
+                                <img alt="" src="https://www.freelogovectors.net/wp-content/uploads/2023/10/semrush-logo-freelogovectors.net_-180x113.png" class="responsive-img" /> Semrush
+                            </div>
+
+                            <div class="col s4 m2">
+                                <img alt="" src="https://www.edigitalagency.com.au/wp-content/uploads/Canva-logo-PNG-large-size.png" class="responsive-img" /> Canva
+                            </div>
+
+                            <div class="col s4 m2">
+                                <img alt="" src="https://www.citypng.com/public/uploads/preview/adobe-photoshop-ps-square-logo-icon-png-7017516947730275g1pkunbfs.png" class="responsive-img" /> Photoshop
+                            </div>
+
+                            <div class="col s4 m2">
+                                <img alt="" src="https://images.vexels.com/content/162832/preview/adobe-illustrator-ai-colored-icon-fb6291.png" class="responsive-img" /> Illustrator
+                            </div>
+
+                            <div class="col s4 m2">
+                                <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRqtIL0vpEsEnhCNcvW8AtYY2Hf1gdRhz3mg&s" class="responsive-img" /> ChatGPT
+                            </div>
+
+
+                            <div class="col s4 m2">
+                                <img alt="" src="https://pbs.twimg.com/profile_images/1769430779845611520/lIgjSJGU_400x400.jpg" class="responsive-img" /> GroxAI/ElonMusk AI
+                            </div>
+
+
+                            <div class="col s4 m2">
+                                <img alt="" src="https://crystalpng.com/wp-content/uploads/2025/01/deepseek-logo-03.png" class="responsive-img" /> DeepSeek AI
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- certifications -->
+                <!-- <div class="card">
           <div class="card-content">
             <h4 class="brown-text light">Certificates</h4>
             <div class="row text-left">
@@ -938,93 +896,91 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
           </div>
         </div> -->
 
-      </div>
-    </section>
-
-    <!-- Seventh Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container">
-        <div class="row">
-          <!-- Education -->
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://ccrc.edu.np/" target="_blank" class="teal-text hoverline"> Capital College and Research Center (CCRC) </a></span>
-                </p>
-                <p class="brown-text">Koteshwor, Kathmandu</p>
-                <p>
-                  <b>Degree: </b>Computer Science Management (+2 )
-                  <br>
-                </p>
-
-                <ul>
-                  <p>
-                    <b>Relevant Courseworks:</b>
-                  <ul>
-                   <li>Built basic websites using HTML, CSS, and JavaScript.</li>
-                   <li>Learned Adobe Photoshop and Illustrator.</li>
-                   <li>Studied the foundations of website and graphic design.</li>
-           
-                  </ul>
-                  </p>
-
-                </ul>
-              </div>
             </div>
+        </section>
 
-            
-          </div>
-          <div class="col s12 m6 l6">
-            <div class="card">
-              <div class="card-content">
-                <p>
-                  <span class="card-title"><a href="https://www.schems.edu.np/" target="_blank" class="teal-text hoverline"> School of Environmental Science and Management (SchEMS) </a></span>
-                </p>
-                <p class="brown-text">Mid-Baneshowr, India</p>
-                <p>
-                  <b>Degree: </b>Completed up to the 2nd year of BCA (Bachelor of Computer Applications) & Drop-Out
-                  <br>
-                </p>
+        <!-- Seventh Section: Education -->
+        <section id="education" class="section scrollspy">
+            <h3 class="page-title white-text teal">Education</h3>
+            <div class="container">
+                <div class="row">
+                    <!-- Education -->
+                    <div class="col s12 m6 l6">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title"><a href="https://ccrc.edu.np/" target="_blank" class="teal-text hoverline"> Capital College and Research Center (CCRC) </a></span>
+                                </p>
+                                <p class="brown-text">Koteshwor, Kathmandu</p>
+                                <p>
+                                    <b>Degree: </b>Computer Science Management (+2 )
+                                    <br>
+                                </p>
 
-                <ul>
-                  <p>
-                    <b>Reason of Drop-Out</b>
-                  <ul>
-                   <li>15 subject exams were pending due to the lockdown; during this time, I also applied for Japanese language studies.</li>
-                   <li>Learned and mastered Web SEO skills and graphic design through online courses.</li>
-                   <li>Approached and assisted many individuals and organizations by creating engaging infographics and social media banners for better audience interaction.</li>
-                   <li>In the IT field, self-learning and self-mastery are crucial. I gained a lot of knowledge beyond my BCA syllabus and am committed to continuously learning and improving through online resources.</li>
+                                <ul>
+                                    <p>
+                                        <b>Relevant Courseworks:</b>
+                                        <ul>
+                                            <li>Built basic websites using HTML, CSS, and JavaScript.</li>
+                                            <li>Learned Adobe Photoshop and Illustrator.</li>
+                                            <li>Studied the foundations of website and graphic design.</li>
 
-                  </ul>
-                  </p>
+                                        </ul>
+                                    </p>
 
-                </ul>
-              </div>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>
+                                    <span class="card-title"><a href="https://www.schems.edu.np/" target="_blank" class="teal-text hoverline"> School of Environmental Science and Management (SchEMS) </a></span>
+                                </p>
+                                <p class="brown-text">Mid-Baneshowr, India</p>
+                                <p>
+                                    <b>Degree: </b>Completed up to the 2nd year of BCA (Bachelor of Computer Applications) & Drop-Out
+                                    <br>
+                                </p>
+
+                                <ul>
+                                    <p>
+                                        <b>Reason of Drop-Out</b>
+                                        <ul>
+                                            <li>15 subject exams were pending due to the lockdown; during this time, I also applied for Japanese language studies.</li>
+                                            <li>Learned and mastered Web SEO skills and graphic design through online courses.</li>
+                                            <li>Approached and assisted many individuals and organizations by creating engaging infographics and social media banners for better audience interaction.</li>
+                                            <li>In the IT field, self-learning and self-mastery are crucial. I gained a lot of knowledge beyond my BCA syllabus and am committed to continuously learning and improving through online resources.</li>
+
+                                        </ul>
+                                    </p>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </section>
 
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p>
-          <a aria-label="Call Varad" data-position="top" data-tooltip="Call Varad"
-            class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
+        <!-- Eight Section: Contact -->
+        <section id="contact" class="section scrollspy full-height">
+            <h3 class="page-title white-text teal">Contact</h3>
+            <div class="container">
+                <p>
+                    <a aria-label="Call Varad" data-position="top" data-tooltip="Call Varad" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i class="fa fa-phone"></i><a
               aria-label="Call Varad">+81 090-6833-2943</a></a>
-        </p>
-        <p>
-          <a aria-label="Email Varad" href="mailto:vbhogayata@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Varad" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
+                </p>
+                <p>
+                    <a aria-label="Email Varad" href="mailto:vbhogayata@gmail.com" target="_blank" data-position="top" data-tooltip="Email Varad" class="btn-floating btn-large waves-effect waves-light blue-grey tooltipped"><i
               class="fa fa-envelope"></i><a aria-label="Email Varad" href="mailto:yosinwork@gmail.com"
               class="hoverline">yosinwork@gmail.com</a></a>
-        </p>
+                </p>
 
-        <!--
+                <!--
         <p>
           <a aria-label="View Varad on LinkedIn" href="____" target="_blank"
             data-position="top" data-tooltip="View Varad on LinkedIn"
@@ -1033,49 +989,50 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
               class="hoverline" target="_blank">_____</a></a>
         </p>
         -->
-      </div>
-    </section>
-  </main>
+            </div>
+        </section>
+    </main>
 
-  <!-- typed.js -->
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Seo Analyist", "Web Developer", "Graphic Designer"],
-      loop: true,
-      typeSpeed: 80,
-      backSpeed: 40
-    });
-  </script>
+    <!-- typed.js -->
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script type="text/javascript">
+        var typed = new Typed('.typing',{
+          strings: ["Seo Analyist", "Web Developer", "Graphic Designer"],
+          loop: true,
+          typeSpeed: 80,
+          backSpeed: 40
+        });
+    </script>
 
 
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
-  </script>
+    <!-- Materialize - Compiled and minified JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+    <script>
+        // Materialize - Initializers
+        $(document).ready(function () {
+          $(".scrollspy").scrollSpy()
+          // Initialize collapse button
+          $(".button-collapse").sideNav({
+            menuWidth: 190, // Default is 240
+            edge: "left", // Choose the horizontal origin
+            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          })
+        })
+    </script>
 
-<script>
-  function scrollGallery(amount) {
-    document.getElementById('galleryContainer').scrollBy({
-      left: amount,
-      behavior: 'smooth'
-    });
-  }
-</script>
+    <script>
+        function scrollGallery(amount) {
+            document.getElementById('galleryContainer').scrollBy({
+              left: amount,
+              behavior: 'smooth'
+            });
+          }
+    </script>
 
-  
+
 </body>
+
 </html>
