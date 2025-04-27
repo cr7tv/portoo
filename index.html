@@ -993,6 +993,22 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
       })
     })
   </script>
+
+  <script>
+  function scrollGallery(amount) {
+    document.getElementById('galleryContainer').scrollBy({
+      left: amount,
+      behavior: 'smooth'
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elemsMaterialbox = document.querySelectorAll('.materialboxed');
+    var instancesMaterialbox = M.Materialbox.init(elemsMaterialbox);
+  });
+</script>
+
+  
 </body>
 
 </html>
