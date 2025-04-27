@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <title> Singh Yogendra - Wordpress | SEO | Graphic Design</title>
 
-
   <style>
     .scroll-btn {
       position: absolute;
@@ -28,12 +27,18 @@
       cursor: pointer;
       z-index: 1;
       font-size: 24px;
+      border-radius: 50%;
     }
     .scroll-btn.left {
-      left: 0;
+      left: -20px;
     }
     .scroll-btn.right {
-      right: 0;
+      right: -20px;
+    }
+    .gallery-wrapper {
+      position: relative;
+      overflow: hidden;
+      margin: 20px 0;
     }
     .gallery-container {
       display: flex;
@@ -42,14 +47,17 @@
       padding: 10px 0;
     }
     .gallery-container::-webkit-scrollbar {
-      display: none; /* Hide scrollbar */
+      display: none;
     }
     .gallery-item {
-      position: relative;
-      min-width: 250px;
-      margin-right: 10px;
+      flex: 0 0 auto;
+      width: 250px;
+      margin-right: 15px;
+      text-align: center;
     }
     .gallery-item img {
+      width: 100%;
+      height: auto;
       border-radius: 8px;
       transition: transform 0.3s;
     }
@@ -57,27 +65,18 @@
       transform: scale(1.02);
     }
     .caption-long {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.6);
-      color: white;
-      padding: 12px;
-      font-size: 14px;
-      box-sizing: border-box;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
+      margin-top: 10px;
     }
     .caption-long h6 {
-      margin: 0 0 6px 0;
+      margin: 5px 0;
       font-weight: bold;
-      font-size: 15px;
+      font-size: 16px;
     }
     .caption-long p {
       margin: 0;
       font-size: 13px;
       line-height: 1.4;
+      color: #555;
     }
   </style>
 
@@ -434,20 +433,18 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
     <div class="card-content">
       <div class="row">
         <div class="col s12">
-          <p>
-            <span class="card-title teal-text">Photo Gallery</span>
-          </p>
+          <p><span class="card-title teal-text">Photo Gallery</span></p>
         </div>
       </div>
 
-      <div class="gallery-wrapper" style="position: relative; overflow: hidden;">
+      <div class="gallery-wrapper">
         <button class="scroll-btn left" onclick="scrollGallery(-300)">&#10094;</button>
 
         <div class="gallery-container" id="galleryContainer">
 
           <div class="gallery-item">
-            <a href="assets/img/gallery1.webp" target="_blank">
-              <img class="responsive-img" src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-27_145951730.png" alt="Gallery Image 1">
+            <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-27_145951730.png" target="_blank">
+              <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-27_145951730.png" alt="Gallery Image 1">
             </a>
             <div class="caption-long">
               <h6>Beautiful Landscape</h6>
@@ -457,7 +454,7 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
 
           <div class="gallery-item">
             <a href="assets/img/gallery2.webp" target="_blank">
-              <img class="responsive-img" src="assets/img/gallery2.webp" alt="Gallery Image 2">
+              <img src="assets/img/gallery2.webp" alt="Gallery Image 2">
             </a>
             <div class="caption-long">
               <h6>City at Night</h6>
@@ -467,7 +464,7 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
 
           <div class="gallery-item">
             <a href="assets/img/gallery3.webp" target="_blank">
-              <img class="responsive-img" src="assets/img/gallery3.webp" alt="Gallery Image 3">
+              <img src="assets/img/gallery3.webp" alt="Gallery Image 3">
             </a>
             <div class="caption-long">
               <h6>Mountain View</h6>
@@ -477,7 +474,7 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
 
           <div class="gallery-item">
             <a href="assets/img/gallery4.webp" target="_blank">
-              <img class="responsive-img" src="assets/img/gallery4.webp" alt="Gallery Image 4">
+              <img src="assets/img/gallery4.webp" alt="Gallery Image 4">
             </a>
             <div class="caption-long">
               <h6>Sunset Beach</h6>
@@ -487,7 +484,7 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
 
           <div class="gallery-item">
             <a href="assets/img/gallery5.webp" target="_blank">
-              <img class="responsive-img" src="assets/img/gallery5.webp" alt="Gallery Image 5">
+              <img src="assets/img/gallery5.webp" alt="Gallery Image 5">
             </a>
             <div class="caption-long">
               <h6>Nature Walk</h6>
@@ -503,7 +500,7 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
     </div>
 
     <div class="card-action">
-      <span>Gallery | Click any photo to view full size</span>
+      <span>Gallery | Click any photo to view in full size</span>
     </div>
   </div>
 </div>
