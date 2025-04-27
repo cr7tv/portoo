@@ -14,6 +14,41 @@
   <link rel="stylesheet" href="assets/css/style.css" />
   <title> Singh Yogendra - Wordpress | SEO | Graphic Design</title>
 
+  <style>
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 24px;
+  }
+  .scroll-btn.left {
+    left: 0;
+  }
+  .scroll-btn.right {
+    right: 0;
+  }
+  .gallery-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  .caption {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 4px 8px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+</style>
+
+  
   <!-- Open Graph-->
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
@@ -372,31 +407,37 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
       </div>
     </div>
 
-    <div class="carousel">
-      <div class="carousel-item center-align">
-        <img class="materialboxed responsive-img" src="assets/img/gallery1.webp" alt="Gallery Image 1">
-        <p class="grey-text text-darken-1">Beautiful Landscape</p>
-      </div>
+    <div class="gallery-wrapper" style="position: relative; overflow: hidden;">
+      <button class="scroll-btn left" onclick="scrollGallery(-300)">&#10094;</button>
+      <div class="gallery-container" id="galleryContainer" style="display: flex; overflow-x: auto; scroll-behavior: smooth;">
+        
+        <div class="gallery-item" style="position: relative; min-width: 250px; margin-right: 10px;">
+          <img class="materialboxed responsive-img" src="assets/img/gallery1.webp" alt="Gallery Image 1">
+          <div class="caption">Beautiful Landscape</div>
+        </div>
 
-      <div class="carousel-item center-align">
-        <img class="materialboxed responsive-img" src="assets/img/gallery2.webp" alt="Gallery Image 2">
-        <p class="grey-text text-darken-1">City at Night</p>
-      </div>
+        <div class="gallery-item" style="position: relative; min-width: 250px; margin-right: 10px;">
+          <img class="materialboxed responsive-img" src="assets/img/gallery2.webp" alt="Gallery Image 2">
+          <div class="caption">City at Night</div>
+        </div>
 
-      <div class="carousel-item center-align">
-        <img class="materialboxed responsive-img" src="assets/img/gallery3.webp" alt="Gallery Image 3">
-        <p class="grey-text text-darken-1">Mountain View</p>
-      </div>
+        <div class="gallery-item" style="position: relative; min-width: 250px; margin-right: 10px;">
+          <img class="materialboxed responsive-img" src="assets/img/gallery3.webp" alt="Gallery Image 3">
+          <div class="caption">Mountain View</div>
+        </div>
 
-      <div class="carousel-item center-align">
-        <img class="materialboxed responsive-img" src="assets/img/gallery4.webp" alt="Gallery Image 4">
-        <p class="grey-text text-darken-1">Sunset Beach</p>
-      </div>
+        <div class="gallery-item" style="position: relative; min-width: 250px; margin-right: 10px;">
+          <img class="materialboxed responsive-img" src="assets/img/gallery4.webp" alt="Gallery Image 4">
+          <div class="caption">Sunset Beach</div>
+        </div>
 
-      <div class="carousel-item center-align">
-        <img class="materialboxed responsive-img" src="assets/img/gallery5.webp" alt="Gallery Image 5">
-        <p class="grey-text text-darken-1">Nature Walk</p>
+        <div class="gallery-item" style="position: relative; min-width: 250px; margin-right: 10px;">
+          <img class="materialboxed responsive-img" src="assets/img/gallery5.webp" alt="Gallery Image 5">
+          <div class="caption">Nature Walk</div>
+        </div>
+
       </div>
+      <button class="scroll-btn right" onclick="scrollGallery(300)">&#10095;</button>
     </div>
 
   </div>
@@ -404,6 +445,7 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
     <span>Gallery | Click to Zoom</span>
   </div>
 </div>
+
 
 
 
