@@ -78,6 +78,35 @@
       line-height: 1.4;
       color: #555;
     }
+
+        .slideshow-container {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* Takes full viewport height */
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slideshow-image {
+      position: absolute;
+      max-width: 100%;
+      height: auto;
+      display: none;
+      transition: opacity 1s ease;
+    }
+
+    .slideshow-image.active {
+      display: block;
+      opacity: 1;
+    }
+
+    .slideshow-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
   </style>
 
   
@@ -536,92 +565,89 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
     <div class="card-content">
       <div class="row">
         <div class="col s12">
-          <p><span class="card-title teal-text">Image Grid</span></p>
+          <p><span class="card-title teal-text">Automatic Image Slideshow</span></p>
         </div>
       </div>
 
-      <div class="gallery-container">
-
-        <!-- 12 Images in a 4x3 Grid -->
-
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" alt="Gallery Image 1">
+      <div class="slideshow-container" id="slideshowContainer">
+        <!-- Slideshow Images -->
+        <div class="slideshow-image active">
+          <a href="assets/img/gallery1.webp" target="_blank">
+            <img src="assets/img/gallery1.webp" alt="Gallery Image 1">
           </a>
         </div>
 
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" alt="Gallery Image 2">
+        <div class="slideshow-image">
+          <a href="assets/img/gallery2.webp" target="_blank">
+            <img src="assets/img/gallery2.webp" alt="Gallery Image 2">
           </a>
         </div>
 
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" alt="Gallery Image 3">
+        <div class="slideshow-image">
+          <a href="assets/img/gallery3.webp" target="_blank">
+            <img src="assets/img/gallery3.webp" alt="Gallery Image 3">
           </a>
         </div>
 
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" alt="Gallery Image 4">
+        <div class="slideshow-image">
+          <a href="assets/img/gallery4.webp" target="_blank">
+            <img src="assets/img/gallery4.webp" alt="Gallery Image 4">
           </a>
         </div>
 
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" alt="Gallery Image 5">
+        <div class="slideshow-image">
+          <a href="assets/img/gallery5.webp" target="_blank">
+            <img src="assets/img/gallery5.webp" alt="Gallery Image 5">
           </a>
         </div>
 
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144221638.png" alt="Gallery Image 6">
+        <div class="slideshow-image">
+          <a href="assets/img/gallery6.webp" target="_blank">
+            <img src="assets/img/gallery6.webp" alt="Gallery Image 6">
           </a>
         </div>
 
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" alt="Gallery Image 7">
+        <div class="slideshow-image">
+          <a href="assets/img/gallery7.webp" target="_blank">
+            <img src="assets/img/gallery7.webp" alt="Gallery Image 7">
           </a>
         </div>
 
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" alt="Gallery Image 8">
+        <div class="slideshow-image">
+          <a href="assets/img/gallery8.webp" target="_blank">
+            <img src="assets/img/gallery8.webp" alt="Gallery Image 8">
           </a>
         </div>
 
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" alt="Gallery Image 9">
+        <div class="slideshow-image">
+          <a href="assets/img/gallery9.webp" target="_blank">
+            <img src="assets/img/gallery9.webp" alt="Gallery Image 9">
           </a>
         </div>
 
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" alt="Gallery Image 10">
+        <div class="slideshow-image">
+          <a href="assets/img/gallery10.webp" target="_blank">
+            <img src="assets/img/gallery10.webp" alt="Gallery Image 10">
           </a>
         </div>
 
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" alt="Gallery Image 11">
+        <div class="slideshow-image">
+          <a href="assets/img/gallery11.webp" target="_blank">
+            <img src="assets/img/gallery11.webp" alt="Gallery Image 11">
           </a>
         </div>
 
-        <div class="gallery-item">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" alt="Gallery Image 12">
+        <div class="slideshow-image">
+          <a href="assets/img/gallery12.webp" target="_blank">
+            <img src="assets/img/gallery12.webp" alt="Gallery Image 12">
           </a>
         </div>
 
       </div>
-
     </div>
 
     <div class="card-action">
-      <span>Click on any image to view original size</span>
+      <span>Images will change automatically every 1.5 seconds</span>
     </div>
   </div>
 </div>
@@ -1182,7 +1208,19 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
   }
 </script>
 
+  <script>
+  let currentIndex = 0;
+  const images = document.querySelectorAll('.slideshow-image');
+
+  function changeImage() {
+    images[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % images.length;
+    images[currentIndex].classList.add('active');
+  }
+
+  setInterval(changeImage, 1500); // Change image every 1.5 seconds
+</script>
+
   
 </body>
-
 </html>
