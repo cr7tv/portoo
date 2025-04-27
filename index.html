@@ -78,42 +78,6 @@
       line-height: 1.4;
       color: #555;
     }
-
-    /* Full viewport slideshow container */
-    .slideshow-container {
-      position: relative;
-      width: 100%;
-      height: 100vh; /* Takes full viewport height */
-      overflow: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: white; /* White background */
-    }
-
-    /* Individual slideshow images */
-    .slideshow-image {
-      position: absolute;
-      width: 100%;
-      height: auto;
-      display: none;
-      transition: opacity 1s ease;
-    }
-
-    .slideshow-image.active {
-      display: block;
-      opacity: 1;
-    }
-
-    /* Ensure images scale responsively and remain centered with white space */
-    .slideshow-image img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain; /* Ensure aspect ratio is preserved */
-      object-position: center; /* Center the image within the container */
-      border-radius: 8px;
-    }
-    
   </style>
 
   
@@ -295,32 +259,7 @@
               <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
               <h5>Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with over 6 years of practical experience.</h5>
             </div>
-            <div class="social">
-              <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
-                <button class="icon-btn linkedin">
-                  <i class="fa fa-linkedin"></i>
-                </button>
-              </a>
-              <a href="https://github.com/varadbhogayata/" target="_blank">
-                <button class="icon-btn github">
-                  <i class="fa fa-github"></i>
-                </button>
-              </a>
-
-              <!-- <a href="https://angel.co/u/varad_bhogayata" target="_blank">
-                <button class="icon-btn angellist">
-                  <i class="fa fa-angellist"></i>
-                </button>
-              </a> -->
-
-              <!-- <a href="http://linkedin.com/in/varadbhogayata" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-
-                  </span>
-              </a> -->
-            </div>
+            
             <div class='buttons'>
               <a href="#about" class="readme">Read More</a>
               <a href="#contact" class="contactme">Contact Me</a>
@@ -562,99 +501,6 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
 
     <div class="card-action">
       <span>Gallery | Click any photo to view in full size</span>
-    </div>
-  </div>
-</div>
-
-
-<div class="container">
-  <div class="card">
-    <div class="card-content">
-      <div class="row">
-        <div class="col s12">
-          <p><span class="card-title teal-text">Automatic Image Slideshow</span></p>
-        </div>
-      </div>
-
-      <div class="slideshow-container" id="slideshowContainer">
-        <!-- Slideshow Images -->
-        <div class="slideshow-image active">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" alt="Gallery Image 1">
-          </a>
-        </div>
-
-        <div class="slideshow-image">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_144428708.png" alt="Gallery Image 2">
-          </a>
-        </div>
-
-        <div class="slideshow-image">
-          <a href="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" target="_blank">
-            <img src="https://raw.githubusercontent.com/yosintv2/cdn/refs/heads/main/image_2025-04-22_153019687.png" alt="Gallery Image 3">
-          </a>
-        </div>
-
-        <div class="slideshow-image">
-          <a href="assets/img/gallery4.webp" target="_blank">
-            <img src="assets/img/gallery4.webp" alt="Gallery Image 4">
-          </a>
-        </div>
-
-        <div class="slideshow-image">
-          <a href="assets/img/gallery5.webp" target="_blank">
-            <img src="assets/img/gallery5.webp" alt="Gallery Image 5">
-          </a>
-        </div>
-
-        <div class="slideshow-image">
-          <a href="assets/img/gallery6.webp" target="_blank">
-            <img src="assets/img/gallery6.webp" alt="Gallery Image 6">
-          </a>
-        </div>
-
-        <div class="slideshow-image">
-          <a href="assets/img/gallery7.webp" target="_blank">
-            <img src="assets/img/gallery7.webp" alt="Gallery Image 7">
-          </a>
-        </div>
-
-        <div class="slideshow-image">
-          <a href="assets/img/gallery8.webp" target="_blank">
-            <img src="assets/img/gallery8.webp" alt="Gallery Image 8">
-          </a>
-        </div>
-
-        <div class="slideshow-image">
-          <a href="assets/img/gallery9.webp" target="_blank">
-            <img src="assets/img/gallery9.webp" alt="Gallery Image 9">
-          </a>
-        </div>
-
-        <div class="slideshow-image">
-          <a href="assets/img/gallery10.webp" target="_blank">
-            <img src="assets/img/gallery10.webp" alt="Gallery Image 10">
-          </a>
-        </div>
-
-        <div class="slideshow-image">
-          <a href="assets/img/gallery11.webp" target="_blank">
-            <img src="assets/img/gallery11.webp" alt="Gallery Image 11">
-          </a>
-        </div>
-
-        <div class="slideshow-image">
-          <a href="assets/img/gallery12.webp" target="_blank">
-            <img src="assets/img/gallery12.webp" alt="Gallery Image 12">
-          </a>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="card-action">
-      <span>Images will change automatically every 1.5 seconds</span>
     </div>
   </div>
 </div>
@@ -1213,19 +1059,6 @@ Self-taught WordPress Website Manager, SEO Specialist, and Graphic Designer with
       behavior: 'smooth'
     });
   }
-</script>
-
-  <script>
-  let currentIndex = 0;
-  const images = document.querySelectorAll('.slideshow-image');
-
-  function changeImage() {
-    images[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % images.length;
-    images[currentIndex].classList.add('active');
-  }
-
-  setInterval(changeImage, 1500); // Change image every 1.5 seconds
 </script>
 
   
